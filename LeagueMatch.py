@@ -18,7 +18,7 @@ def numOfMatches(teams):
     if teams > 0:
         total +=  (teams - 1)
         teams -= 1
-        numOfMatches(teams)
+        return numOfMatches(teams)
     return total
 # A function that prints out the final results. It receives two
 # arguments that represent the number of teams and matches.
