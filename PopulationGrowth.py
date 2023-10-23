@@ -1,7 +1,7 @@
 ##########################################################################
-# name:
-# date:
-# description:
+# name: Alan Dreher
+# date: October 23 2023
+# description: Calculates Population growth of 2 countries
 #########################################################################
 
 # A function that prints out the introduction to the program. It doesn't
@@ -90,6 +90,8 @@ def table(pop1, pop2, rate1, rate2, years, interval):
     while years >= currentYear:
         print(f"{currentYear}\t {calculatePopulation(pop1, rate1, currentYear)}\t{calculatePopulation(pop2, rate2, currentYear)}")
         currentYear += interval
+    for i in range(50):
+        print("-", end="")
     pass
 
 ############### MAIN ##################################
