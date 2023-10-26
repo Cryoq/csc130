@@ -1,10 +1,17 @@
+#############################################################################
+# author: Alan Dreher
+# date: October 25, 2023
+# description: Changes blinking pattern whenether the button is pressed or not
+#############################################################################
 import pineworkslabs.RPi as GPIO
 from time import sleep
 
+#Sets LED and Button variable
 LED = 16
 BUTTON = 25
+
+#Sets up the LED, BUTTON and mdoe
 GPIO.setmode(GPIO.LE_POTATO_LOOKUP)
-#Sets up the LED and BUTTON
 GPIO.setup(LED, GPIO.OUT)
 GPIO.setup(BUTTON, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
