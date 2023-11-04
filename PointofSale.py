@@ -1,18 +1,15 @@
 ####################################################################
 # author: Alan Dreher
 # date: October 16, 2023
-# description: 
+# description: Calculates min, max, and total costs
 ####################################################################\
     
 # A function to print out the introduction to the program. It does not
 # take any arguments or return any results.
 def intro():
-    for i in range(60):
-        print('-', end="")
+    print("-" * 60)
     print("\nWelcome to Cyber Groceries")
-    for i in range(60):
-        print('-', end='')
-    print('')
+    print("-" * 60)
 
 # A function that prompts the user for the number of items that the
 # customer is buying. It does not take any arguments but it returns the
@@ -53,8 +50,10 @@ numberOfItems = numOfItems_()
 items = item_(numberOfItems)
 costs = cost_(items)
 # Print out items and their costs.
+print("-" * 60)
 print(f"Items = {items}")
 print(f"Prices = {costs}")
+print("-" * 60)
 # Figure out what the cheapest and most expensive items are as well as
 # what the total cost would be.
 lowest = costs.index(min(costs))
@@ -65,3 +64,5 @@ total = sum(costs)
 print(f"The cheepest item is {items[lowest]}")
 print(f"The most expensive item is {items[highest]}")
 print(f"The total cost is {total}")
+print("-" * 60)
+print("-" * 60)
