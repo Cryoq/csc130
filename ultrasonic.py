@@ -1,3 +1,9 @@
+#############################################################################
+# author: Alan Dreher
+# date: November 10, 2023
+# description: Uses Ultrasonic sensor and creates a list using measurements and sorts it
+#############################################################################
+
 import pineworkslabs.RPi as GPIO
 from time import sleep, time
 
